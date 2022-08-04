@@ -1,26 +1,41 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Altone-Bold";
+  font-display: swap;
+  src: url("../fonts/Altone-Bold.ttf");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Altone-ExtraBold";
+  font-display: swap;
+  src: url("../fonts/Altone-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Altone-Regular";
+  font-display: swap;
+  src: url("../fonts/Altone-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Altone-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Altone-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "CoffeeExtra";
+  font-display: swap;
+  src: url("../fonts/CoffeeExtra.woff");
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }
